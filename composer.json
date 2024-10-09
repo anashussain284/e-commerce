@@ -1,0 +1,21 @@
+{
+    "name": "anashussain284/e-commerce",
+    "description": "An E-commerce platform built with PHP OOP concepts.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anas Hussain M",
+            "email": "anashussain@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":"^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

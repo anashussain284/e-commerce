@@ -7,20 +7,20 @@ namespace App;
 use App\User;
 
 class Customer extends User {
-    private int $id;
+    private string $id;
     private string $name;
     private string $email;
     private string $role = "Customer";
     private bool $authStatus = false;
 
-    public function __construct(int $id, string $name, string $email)
+    public function __construct(string $id, string $name, string $email)
     {
         $this->id = $id;
         $this->name = $name;
         $this->email = $email;
     }
 
-    public function getAuthStatus() : string 
+    public function getLoginStatus() : string 
     {
         if ($this->authStatus) {
             return "Logged in.";
@@ -28,12 +28,12 @@ class Customer extends User {
         return "Logged out.";
     }
 
-    public function setId(int $id) : void 
+    public function setId(string $id) : void 
     {
         $this->id = $id;
     }
 
-    public function getId() : int {
+    public function getId() : string {
         return $this->id;
     }
 

@@ -22,10 +22,11 @@ class Customer extends User {
 
     public function getLoginStatus() : string 
     {
-        if ($this->authStatus) {
-            return "Logged in.";
-        }
-        return "Logged out.";
+        return $this->authStatus;
+        // if ($this->authStatus) {
+        //     return "Logged in.";
+        // }
+        // return "Logged out.";
     }
 
     public function setId(string $id) : void 

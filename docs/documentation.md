@@ -611,3 +611,11 @@ $customer->logout();
 - **Inheritance and Interfaces:** `User` is an abstract class, extended by `Customer` and `Admin`, while `Product` is an interface implemented by `PhysicalProduct` and `DigitalProduct`.
 
 You can expand this project further by adding features like order tracking, user authentication, shipping details, etc.
+
+------------------------------
+
+## To continue
+
+### 1. Complete `CartTest.php` file
+- testAddItem() function 
+- test how to test return type is an object in phpunit test
